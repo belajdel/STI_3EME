@@ -1,0 +1,58 @@
+body{ 
+    margin: 0 auto; /* pour éviter les marges */ 
+    text-align: center;
+    }
+    header>img      /*paramétrage de l'image du header */
+    { width:; 
+    height:; 
+    border:outset; 
+    }
+    .nav{ /*paramétrage du menu de navigation */
+    text-align:; 
+    list-style: ; 
+    background-color:; 
+    border:outset; 
+    margin:; 
+    height:; } 
+    
+    .nav li{/*paramétrage de la liste du menu de navigation */
+    display:; 
+    margin:; 
+    width: ; 
+    border:; 
+    text-shadow:  ;
+    background: #; 
+    } 
+    .nav li>a{ 
+    font:; 
+    display: ; 
+    width:; 
+    text-align: ; 
+    text-decoration: ; 
+    font-weight: ; 
+    color:; } 
+    .nav a:hover{ 
+    color:; 
+    background-color:; 
+    }
+    .contenu { 
+    background-color:; 
+    border:; 
+    height:; 
+    text-align:;
+    }
+    .contenu>h1{ 
+    font:; 
+    text-shadow: ; 
+    margin: ; 
+    background-color:; 
+    color:; }
+    .contenu>img { 
+    margin:; 
+    text-align:;
+    width:;
+    height:;}
+    
+    footer{ 
+    margin:10px 203px 10px 203px; 
+    }

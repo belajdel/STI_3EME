@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <script type="text/javascript" src="js.js"></script>
+    <style type="text/css">
+      #test {
+        display: none;
+        color: red;
+      }
+
+      table {
+        margin-top: 100px;
+      }
+
+      tr td {
+        border: 2px solid;
+        padding: 10px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body onload="generate()">
+    <div style="border: 1px dashed; padding: 20px">
+      <h1 align="center">Evaluation d'un hôtel</h1>
+      <div>
+        <label style="font-weight: bold"> Hotel : </label>
+        <select id="l1">
+          <option disabled selected>Choisir un hôtel</option>
+          <option>5 Stars</option>
+          <option>Globe</option>
+          <option>The Sun</option>
+        </select>
+      </div>
+
+      <table>
+        <tr>
+          <td>Acceuil :</td>
+          <td>
+            <input type="radio" name="ac" id="r1" /> Très satisfaisant
+            <input type="radio" name="ac" id="r2" /> Satisfaisant
+            <input type="radio" name="ac" id="r3" /> Peu satisfaisant
+          </td>
+        </tr>
+
+        <tr>
+          <td>Restauration :</td>
+          <td>
+            <input type="radio" name="rest" id="r4" /> Très satisfaisant
+            <input type="radio" name="rest" id="r5" /> Satisfaisant
+            <input type="radio" name="rest" id="r6" /> Peu satisfaisant
+          </td>
+        </tr>
+
+        <tr>
+          <td>Extra :</td>
+          <td>
+            <input type="checkbox" id="chk1" /> Piscine couverte<br />
+            <input type="checkbox" id="chk2" /> Plage privée<br />
+            <input type="checkbox" id="chk3" /> Couverture Wifi<br />
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="2">
+            <div style="float: right">
+              Captcha
+              <input type="text" name="" readonly id="captcha" value="" />
+              <button onclick="generate()" id="but1">Actualiser</button>
+            </div>
+            <br /><br />
+            <div>Combien de lettres majuscules dans la zone Captcha ?</div>
+            <br />
+            <div style="float: right; padding-right: 75px">
+              Réponse <input type="number" name="" id="retype" value="" />
+            </div>
+            <br />
+            <p id="test" style="float: right"></p>
+          </td>
+        </tr>
+      </table>
+
+      <div style="margin-left: 200px; margin-top: 10px">
+        <button onclick="location.reload()">Annuler</button>
+        <button onclick="verif()" id="but2">Valider</button>
+      </div>
+    </div>
+  </body>
+</html>

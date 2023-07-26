@@ -1,0 +1,101 @@
+<head> 
+<title>Formulaire avec HTML5 & JAVASCRIPT</title>
+
+<link rel="stylesheet" href="style.css">
+ </head>
+ <body >
+ 
+<header>
+       
+       <div class="titre"><h1>Fiche d'Inscription</h1></div>
+       <div class="logo"><img src="image1.png"></div>
+</header>
+<form name="formulaire" method="post" id="frm">
+       <input type="time" id="heure" name="appt" value="08:00"  
+ <fieldset> 
+ <legend><h2>Vos coordonnées</h2></legend> <br /> 
+<label>Nom*:</label><input type="text" placeholder="vote nom" id="nom" /> <br /> 
+<label> Prénom*:</label><input type="text" placeholder="vote prenom" /> <br /> 
+<label>Date de naissance:</label><input type="date" value="jj/mm/aaaa" id="dt">
+<label>Age= </label> <input type="text" id="age" > <br />
+<div id="sex" > 
+<input type="radio" name="sex" value="Homme" />Homme <br/> 
+<input type="radio" name="sex" value="Femme"/>Femme 
+</div> 
+<label>Mail:*</label><input type="email" id="email" > <br/>
+<label>Téléphone</label> <input type="tel" id="phone" name="phone"  >
+
+<small>Format: +216-12-345-678</small> <br />
+ <label>Votre site:*</label><input type="text" value="http://www." ><br /> <br/>
+
+<label>Pays:* </label>
+<select id="choix" >
+ <option disabled="votre pays" selected="">Votre pays</option> <optgroup label="Europe"> 
+<option>France</option> <option>italie</option> <option>Allemagne</option> </optgroup> <optgroup label="Amérique"> 
+<option>USA</option> <option>Canada</option> 
+<option>Argentine</option>
+<option>Mexique</option> </optgroup> <optgroup label="Autres"> 
+<option>Afrique</option> 
+<option>Asie</option> 
+<option>Océanie</option>
+ <option>Australie</option> </optgroup> 
+ </select> <br/> 
+ <br/>
+ <label>Code:*</label><input required="" /><br /> 
+ 
+</fieldset> <fieldset> <legend><h2>Vos gôuts</h2></legend>
+ <div> 
+<input type="checkbox" name="gout" value="Pommes" />Pommes<br/> 
+<input type="checkbox" name="gout" value="Poires" />Poires<br/> 
+<input type="checkbox" name="gout" value="Scoubidous"/>Scoubidous <br/>
+<input type="checkbox" name="gout" checked value="Autres" />Autre <br/>
+</div>
+
+<br/>
+ <label for="ice-cream-choice">Choisir un gôut :</label>
+<input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice">
+
+<datalist id="ice-cream-flavors">
+    <option value="Chocolate">
+    <option value="Coconut">
+    <option value="Mint">
+    <option value="Strawberry">
+    <option value="Vanilla">
+</datalist>
+<br/> <br/>
+ <textarea cols="50" rows="5" required placeholder="Décrivez vos gôuts en détail" ></textarea> 
+ 
+ </fieldset>
+ <fieldset> 
+ <legend><h2>    Participation  </h2></legend> <br/>
+ <label>Type de participation : </label> <br/>
+ <label>1) : </label><input id ="tp1" /><br /> 
+ <label>2) : </label><input STYLE="background-color: #72A4D2;" id ="tp2" /><br /> 
+ <label for="tentacles"> - Nombre de participants (10-100):</label>
+
+<input type="number" id="tentacles" name="tentacles" min="10" max="100" )'>
+
+ <br/><br/>
+ <legend>- Votre avis  </legend> 
+
+
+<div>
+  <input type="range" id="volume" name="volume"
+         min="0" max="11">
+  <label for="volume"> Importance de l'évènnement </label>
+</div>
+
+<div>
+  <input type="range" id="cowbell" name="cowbell" 
+         min="0" max="100" value="90" step="10">
+  <label for="cowbell"> Votre intérêt à l'évènnement </label>
+</div>
+
+</fieldset>
+ <fieldset> <legend><h2>Envoyer votre photo</h2></legend> 
+<input type="button" value="choisir un fichier" /> <br/><br/><br/> <input value="Effacer" type="reset" /> <input type="submit" value="Envoyer" /> </fieldset> 
+
+
+
+</form> 
+</body> 

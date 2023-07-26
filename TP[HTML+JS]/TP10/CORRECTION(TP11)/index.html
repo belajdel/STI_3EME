@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <script src="tp11.js"></script>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Inscription</legend>
+
+      <table>
+        <tr>
+          <td><label>Pseudo</label></td>
+          <td>
+            <input
+              type="text"
+              name=""
+              placeholder="De 5 à 15 caractères"
+              id="ps"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td><label>Email</label></td>
+          <td><input type="mail" name="" id="m" /></td>
+        </tr>
+
+        <tr>
+          <td><label>Mot De Passe</label></td>
+          <td>
+            <input
+              type="password"
+              name=""
+              placeholder="Contient des lettres Majuscules"
+              id="pwd"
+            /><br />
+          </td>
+        </tr>
+
+        <tr>
+          <td><label>Confirmer mot de passse</label></td>
+          <td>
+            <input
+              type="password"
+              name=""
+              placeholder="Confirmer le mot de passe"
+              id="rpwd"
+            />
+          </td>
+        </tr>
+      </table>
+
+      <button onclick="verif()">Envoyer</button>
+      <input type="reset" value="Anuler"/>
+    </fieldset>
+
+    <fieldset>
+      <legend>Abonnement salle de sport</legend>
+      <table>
+        <tr>
+          <td>Activité sportive:</td>
+          <td>
+            <select id="lst">
+              <option>Gymnastique</option>
+              <option>Karaté</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Age :</td>
+          <td>
+            <input type="radio" name="age" id="a1" />Enfant
+            <input type="radio" name="age" id="a2" />Adult
+          </td>
+        </tr>
+
+        <tr>
+          <td>Abonnement :</td>
+          <td>
+            <input type="radio" name="abon" id="m1" />1 Mois
+            <input type="radio" name="abon" id="m2" />3 Mois
+          </td>
+        </tr>
+
+        <tr>
+          <td><input onclick="calculer()" type="button" value="Calculer NET à Payer" /></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>Net a Payer =</td>
+          <td><input type="text" id="nap" readonly /></td>
+        </tr>
+      </table>
+    </fieldset>
+
+    <fieldset>
+      <legend>Calculer IMC</legend>
+
+      <table>
+        <tr>
+          Calculer votre Indice de Masse Corporelle
+        </tr>
+        <tr>
+          <td>Taille (m):</td>
+          <td>
+            <input
+              type="number"
+              step="0.1"
+              placeholder="Indiquer votre taille"
+              id="t"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td>Poids (kg):</td>
+          <td>
+            <input type="number" placeholder="Indiquer votre poids" id="p" />
+          </td>
+        </tr>
+
+        <tr>
+          <td><input type="button" value="calculer" onclick="Imc()" /><td /></td>
+        </tr>
+        <tr>
+          <td><label>Résultat:</label></td>
+          <td><input type="text" id="res"/></td>
+        </tr>
+      </table>
+    </fieldset>
+  </body>
+</html>

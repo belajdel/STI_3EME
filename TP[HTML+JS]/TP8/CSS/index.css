@@ -1,0 +1,21 @@
+header {
+  background-image: linear-gradient(white, orange);
+  height: 80px;
+  display: flex;
+}
+
+.logo > img {
+  margin: 5px 0 5px 20px;
+  width: 100px;
+  height: 100px;
+}
+.titre > h1 {
+  text-align: center;
+  text-transform: uppercase;
+
+  color: rgb(139, 92, 4);
+}
+.titre {
+  bottom: 90px;
+  width: 60%;
+}
